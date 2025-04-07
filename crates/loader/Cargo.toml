@@ -1,0 +1,10 @@
+[package]
+name = "plugin_loader"
+version = { workspace = true }
+edition = { workspace = true }
+
+[dependencies]
+plugin_api = { workspace = true }
+libloading = { workspace = true }
+stabby = { workspace = true }
+tokio = { workspace = true }

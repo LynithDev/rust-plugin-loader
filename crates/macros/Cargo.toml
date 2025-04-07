@@ -1,0 +1,13 @@
+[package]
+name = "plugin_macros"
+version = { workspace = true }
+edition = { workspace = true }
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = { version = "1" }
+paste = { version = "1" }
+syn = { version = "2" }
+quote = { version = "1" }

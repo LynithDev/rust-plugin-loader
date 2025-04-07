@@ -1,0 +1,23 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/api",
+    "crates/loader",
+    "crates/plugin",
+    "crates/macros",
+]
+
+[workspace.package]
+name = "plugins_test"
+version = "0.1.0"
+edition = "2024"
+
+[workspace.dependencies]
+plugin_api = { path = "crates/api" }
+plugin_macros = { path = "crates/macros" }
+
+libloading = "0.8"
+stabby = { version = "36.2", features = ["serde", "libloading"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0" }
+tokio = { version = "1", features = ["full"] }

@@ -1,0 +1,12 @@
+[package]
+name = "plugin_api"
+version = { workspace = true }
+edition = { workspace = true }
+
+[dependencies]
+plugin_macros = { workspace = true }
+
+stabby = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true }
